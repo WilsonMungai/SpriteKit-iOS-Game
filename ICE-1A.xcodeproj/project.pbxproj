@@ -15,6 +15,7 @@
 		C8B6D8312976179B000601B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B6D82F2976179B000601B3 /* Main.storyboard */; };
 		C8B6D8332976179D000601B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B6D8322976179D000601B3 /* Assets.xcassets */; };
 		C8B6D8362976179D000601B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B6D8342976179D000601B3 /* LaunchScreen.storyboard */; };
+		C8B6D83D29761C2B000601B3 /* Assets 2 in Resources */ = {isa = PBXBuildFile; fileRef = C8B6D83C29761C2B000601B3 /* Assets 2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C8B6D8302976179B000601B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8B6D8322976179D000601B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B6D8352976179D000601B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8B6D83C29761C2B000601B3 /* Assets 2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Assets 2"; path = "../../../../../Desktop/Assets 2"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		C8B6D8242976179B000601B3 /* ICE-1A */ = {
 			isa = PBXGroup;
 			children = (
+				C8B6D83C29761C2B000601B3 /* Assets 2 */,
 				C8B6D8252976179B000601B3 /* AppDelegate.swift */,
 				C8B6D8272976179B000601B3 /* GameScene.sks */,
 				C8B6D8292976179B000601B3 /* Actions.sks */,
@@ -132,6 +135,7 @@
 				C8B6D8312976179B000601B3 /* Main.storyboard in Resources */,
 				C8B6D8282976179B000601B3 /* GameScene.sks in Resources */,
 				C8B6D8332976179D000601B3 /* Assets.xcassets in Resources */,
+				C8B6D83D29761C2B000601B3 /* Assets 2 in Resources */,
 				C8B6D8362976179D000601B3 /* LaunchScreen.storyboard in Resources */,
 				C8B6D82A2976179B000601B3 /* Actions.sks in Resources */,
 			);
