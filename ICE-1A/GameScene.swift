@@ -2,6 +2,10 @@ import SpriteKit
 import GameplayKit
 import AVFoundation
 
+let screeSize = UIScreen.main.bounds
+var screenWidth: CGFloat?
+var screenHeight: CGFloat?
+
 class GameScene: SKScene {
     
     // Instance varaibles
@@ -11,6 +15,10 @@ class GameScene: SKScene {
     var island: Island?
     
     override func sceneDidLoad() {
+        
+        screenWidth = frame.width
+        screenHeight = frame.height
+        
         name = "Game"
         
         // add the ocean to the scene
