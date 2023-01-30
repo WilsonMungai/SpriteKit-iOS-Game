@@ -6,6 +6,7 @@ class Player: GameObject {
     // MARK: Initializer
     init() {
         super.init(imageString: "plane", initialScale: 2.0)
+        Start()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -16,7 +17,7 @@ class Player: GameObject {
     
     override func Start()
     {
-        zPosition = 2
+        zPosition = Layer.plane.rawValue
         Reset()
     }
     

@@ -2,6 +2,7 @@ import GameplayKit
 import SpriteKit
 
 class GameObject: SKSpriteNode {
+    
     // Public instance members
     var horizontalSpeed: CGFloat?
     var verticalSpeed: CGFloat?
@@ -14,7 +15,7 @@ class GameObject: SKSpriteNode {
     var randomSource: GKARC4RandomSource?
     var randomDist: GKRandomDistribution?
     
-    // MARK: Initiliazer
+    // MARK: - Initiliazer
     init(imageString: String, initialScale: CGFloat) {
         let texture = SKTexture(imageNamed: imageString)
         let color = UIColor.clear
@@ -35,6 +36,7 @@ class GameObject: SKSpriteNode {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Functions
     func Start() {
         
     }

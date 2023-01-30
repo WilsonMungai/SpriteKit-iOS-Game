@@ -8,6 +8,7 @@ class GameScene: SKScene {
     var ocean1: Ocean?
     var ocean2 : Ocean?
     var player : Player?
+    var island: Island?
     
     override func sceneDidLoad() {
         name = "Game"
@@ -23,9 +24,13 @@ class GameScene: SKScene {
         ocean2?.position.y = -627
         addChild(ocean2!)
         
+        // add the plane to the game scene
         player = Player()
-        player?.Start()
         addChild(player!)
+        
+        // add the island to the game scene
+        island = Island()
+        addChild(island!)
     }
     
     func touchDown(atPoint pos : CGPoint) {
@@ -62,6 +67,7 @@ class GameScene: SKScene {
         ocean1?.Update()
         ocean2?.Update()
         player?.Update()
+        island?.Update()
     }
     
 }
