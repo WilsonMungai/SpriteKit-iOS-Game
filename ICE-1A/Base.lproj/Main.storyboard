@@ -15,13 +15,42 @@
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MKJ-TU-uuw">
+                                <rect key="frame" x="20" y="59" width="390" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udx-a4-v28">
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="55"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.92549026010000002" green="0.54509806630000002" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 99999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPE-SG-rGs">
+                                        <rect key="frame" x="195" y="0.0" width="195" height="55"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.92549026010000002" green="0.54509806630000002" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="MKJ-TU-uuw" secondAttribute="bottom" constant="784" id="3yb-yo-Dna"/>
+                            <constraint firstItem="MKJ-TU-uuw" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="20" id="GgJ-sW-1vd"/>
+                            <constraint firstItem="MKJ-TU-uuw" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="ULK-JR-jFL"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="MKJ-TU-uuw" secondAttribute="trailing" constant="20" id="sRM-cO-U9p"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="LivesLabel" destination="udx-a4-v28" id="6aS-p6-A3Y"/>
+                        <outlet property="ScoreLabel" destination="bPE-SG-rGs" id="R9K-TV-2BW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="4"/>
+            <point key="canvasLocation" x="115.81395348837209" y="3.8626609442060089"/>
         </scene>
     </scenes>
     <resources>
